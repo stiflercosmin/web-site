@@ -1,10 +1,7 @@
-# NC Photography
+# Cornell Photo Society
 
-# Stylesheets
-CSS are build using [SAAS](https://sass-lang.com/), an up-to-date version is already in the _css_ directory. For development run:
+Source code for http://cornell.photo
 
-```
-sass --watch scss/main.scss css/style.css
-```
+## License
 
-For production use the `--style compressed` flag.
+MIT © [Kevin Schaich](https://kevinschaich.io)
