@@ -1,0 +1,38 @@
+$column-gap: 5px;
+$border-margin: 20px;
+
+article.content {
+  .grid {
+    margin: 0 $border-margin $border-margin $border-margin;
+    line-height: 0;
+    column-count: 1;
+
+    img {
+      @include image-responsive(100%);
+      margin-bottom: $column-gap;
+    }
+
+    @include respond-to(phablets) {
+      column-gap: $column-gap;
+    }
+
+    @include respond-to(tablets) {
+      margin-right: $border-margin;
+      column-count: 3;
+      column-gap: $column-gap + 2;
+
+      img {
+        margin-bottom: $column-gap + 2;
+      }
+    }
+
+    @include respond-to(desktops) {
+      column-count: 4;
+      column-gap: $column-gap + 4;
+
+      img {
+        margin-bottom: $column-gap + 4;
+      }
+    }
+  }
+}
